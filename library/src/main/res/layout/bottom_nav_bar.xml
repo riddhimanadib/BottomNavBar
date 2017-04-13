@@ -1,0 +1,153 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:cardElevation="10dp"
+    card_view:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:id="@+id/panelAddress"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorOffWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutBar1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/viewBar1"
+                android:background="@color/colorNavAccentSelected" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/imageViewBar1"
+                android:tint="@color/colorNavAccentSelected"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="HOME"
+                android:textSize="12sp"
+                android:id="@+id/textViewBar1"
+                android:textColor="@color/colorNavAccentSelected"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutBar2"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorNavAccentSelected"
+                android:id="@+id/viewBar2"
+                android:visibility="invisible"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/imageViewBar2"
+                android:tint="@color/colorNavAccentUnselected"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="SUPPORT"
+                android:textSize="12sp"
+                android:id="@+id/textViewBar2"
+                android:textColor="@color/colorNavAccentUnselected"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutBar3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorNavAccentSelected"
+                android:id="@+id/viewBar3"
+                android:visibility="invisible"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/imageViewBar3"
+                android:tint="@color/colorNavAccentUnselected"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="BILLING"
+                android:textSize="12sp"
+                android:id="@+id/textViewBar3"
+                android:textColor="@color/colorNavAccentUnselected"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutBar4"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorNavAccentSelected"
+                android:id="@+id/viewBar4"
+                android:visibility="invisible"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/imageViewBar4"
+                android:tint="@color/colorNavAccentUnselected"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="PROFILE"
+                android:textSize="12sp"
+                android:id="@+id/textViewBar4"
+                android:textColor="@color/colorNavAccentUnselected"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

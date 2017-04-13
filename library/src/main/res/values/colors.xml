@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorOffWhite">#F8F8F8</color>
+    <color name="colorNavAccentSelected">#9D0E15</color>
+    <color name="colorNavAccentUnselected">#727272</color>
+</resources>
