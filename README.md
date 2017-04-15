@@ -3,7 +3,7 @@ Bottom-Nav-Bar
 
 > Easily add four tabbed bottom navigation bar in your app.
 
-![](https://github.com/adib2149/BottomNavBar/screenshot/screenshot.gif)
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/screenshot.gif)
 
 This library aids in adding four tabs in Bottom Navigation Bar, as easily and fast as possible. Th result looks like as it is commonly found in most of the apps, like Quora and others.
 
