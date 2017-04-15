@@ -1,8 +1,6 @@
 package me.riddhimanadib.bottomnavbar;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.widget.Toast;
 
@@ -10,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import me.riddhimanadib.library.BottomBarHolderActivity;
+import me.riddhimanadib.library.NavigationPage;
 
 public class MainActivity extends BottomBarHolderActivity implements FirstFragment.OnFragmentInteractionListener, SecondFragment.OnFragmentInteractionListener {
 
@@ -17,25 +16,18 @@ public class MainActivity extends BottomBarHolderActivity implements FirstFragme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        List<Fragment> fragmentList = new ArrayList<>();
-        fragmentList.add(FirstFragment.newInstance());
-        fragmentList.add(SecondFragment.newInstance());
-        fragmentList.add(ThirdFragment.newInstance());
-        fragmentList.add(FourthFragment.newInstance());
+        NavigationPage page1 = new NavigationPage("Home", ContextCompat.getDrawable(this, R.drawable.ic_home_black_24dp), FirstFragment.newInstance());
+        NavigationPage page2 = new NavigationPage("Support", ContextCompat.getDrawable(this, R.drawable.ic_mail_black_24dp), SecondFragment.newInstance());
+        NavigationPage page3 = new NavigationPage("Billing", ContextCompat.getDrawable(this, R.drawable.ic_assessment_black_24dp), ThirdFragment.newInstance());
+        NavigationPage page4 = new NavigationPage("Profile", ContextCompat.getDrawable(this, R.drawable.ic_person_black_24dp), FourthFragment.newInstance());
 
-        List<String> titleList = new ArrayList<>();
-        titleList.add("Home");
-        titleList.add("Support");
-        titleList.add("Billing");
-        titleList.add("Profile");
+        List<NavigationPage> navigationPages = new ArrayList<>();
+        navigationPages.add(page1);
+        navigationPages.add(page2);
+        navigationPages.add(page3);
+        navigationPages.add(page4);
 
-        List<Drawable> iconList = new ArrayList<>();
-        iconList.add(ContextCompat.getDrawable(this, R.drawable.ic_home_black_24dp));
-        iconList.add(ContextCompat.getDrawable(this, R.drawable.ic_mail_black_24dp));
-        iconList.add(ContextCompat.getDrawable(this, R.drawable.ic_assessment_black_24dp));
-        iconList.add(ContextCompat.getDrawable(this, R.drawable.ic_person_black_24dp));
-
-        super.setupBottomBarHolderActivity(fragmentList, titleList, iconList);
+        super.setupBottomBarHolderActivity(navigationPages);
     }
 
     @Override
