@@ -27,9 +27,16 @@ public class BottomBarHolderActivity extends AppCompatActivity implements Bottom
      * @param pages
      */
     public void setupBottomBarHolderActivity(List<NavigationPage> pages) {
-        mNavigationPageList = pages;
-        mBottomNav = new BottomNavigationBar(this, pages, this);
-        setupFragments();
+
+        // throw error if pages does not have 4 elements
+        if (pages.size() != 4) {
+            throw new RuntimeException("List of NavigationPage must contain 4 members.");
+        } else {
+            mNavigationPageList = pages;
+            mBottomNav = new BottomNavigationBar(this, pages, this);
+            setupFragments();
+        }
+
     }
 
     /**
