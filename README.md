@@ -31,8 +31,8 @@ How to use
 ``` 'java'
 public class SampleFragment extends Fragment{
 
-    public static FourthFragment newInstance() {
-        return new FourthFragment();
+    public static SampleFragment newInstance() {
+        return new SampleFragment();
     }
 
     @Override
@@ -55,7 +55,7 @@ public class MainActivity extends BottomBarHolderActivity
 
         // four navigation pages that would be displayed as four tabs
         // contains title, icon and fragment instance
-        NavigationPage page1 = new NavigationPage("Home", ContextCompat.getDrawable(this, R.drawable.ic_home_black_24dp), FirstFragment.newInstance());
+        NavigationPage page1 = new NavigationPage("Home", ContextCompat.getDrawable(this, R.drawable.ic_home_black_24dp), FirstFragment.newInstance()); // or, SampleFragment.newInstance(), as in this example
         NavigationPage page2 = new NavigationPage("Support", ContextCompat.getDrawable(this, R.drawable.ic_mail_black_24dp), SecondFragment.newInstance());
         NavigationPage page3 = new NavigationPage("Billing", ContextCompat.getDrawable(this, R.drawable.ic_assessment_black_24dp), ThirdFragment.newInstance());
         NavigationPage page4 = new NavigationPage("Profile", ContextCompat.getDrawable(this, R.drawable.ic_person_black_24dp), FourthFragment.newInstance());
@@ -82,6 +82,10 @@ If you want to change the colors, just override the colors in your **colors.xml*
 <color name="colorNavAccentUnselected">#727272</color>
 ```
 
+
+Contributing
+-----------------
+Send Pull Requests and you're in!! Alternatively, you can start adding issues here in this repo!
 
 License
 -----------------
