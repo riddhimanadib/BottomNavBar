@@ -3,7 +3,7 @@ Bottom-Nav-Bar
 
 > Easily add four tabbed bottom navigation bar in your app.
 
-![](https://github.com/adib2149/BottomNavBar/screenshot/screenshot.gif)
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/screenshot.gif)
 
 This library aids in adding four tabs in Bottom Navigation Bar, as easily and fast as possible. Th result looks like as it is commonly found in most of the apps, like Quora and others.
 
@@ -12,11 +12,11 @@ Difference from Official [Bottom Navigation View](https://material.io/guidelines
 -----------------
 - This library is significantly different from what Google has provided for Android Developers. The official Bottom Navigation View from Google doesn't show text when it has 4 tabs.
 
-![](https://github.com/adib2149/BottomNavBar/screenshot/official_bottom_nav_bar.gif)
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/official_bottom_nav_bar.gif)
 
 - this library helps you add icons and texts with four bottom bars very easily and efficiently, where all stays visisble all the time, just like this one here:
 
-![](https://github.com/adib2149/BottomNavBar/screenshot/quora.jpg)
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/quora.jpg)
 
 Features
 -----------------
