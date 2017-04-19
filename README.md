@@ -12,7 +12,7 @@ Difference from Official [Bottom Navigation View](https://material.io/guidelines
 -----------------
 - This library is significantly different from what Google has provided for Android Developers. The official Bottom Navigation View from Google doesn't show text when it has 4 tabs.
 
-![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/official_bottom_nav_bar.gif)
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/official_bottom_nav_bar.jpg)
 
 - this library helps you add icons and texts with four bottom bars very easily and efficiently, where all stays visisble all the time, just like this one here:
 
