@@ -7,8 +7,16 @@ Bottom-Nav-Bar
 
 This library aids in adding four tabs in Bottom Navigation Bar, as easily and fast as possible. Th result looks like as it is commonly found in most of the apps, like Quora and others.
 
-Point to note: This library is significantly different from what Google has provided for Android Developers. The official Bottom Navigation Bar from Google doesn't show text when it has 4 tabs. But this library shows icon and text with four bottom bars.
 
+Difference from Official [Bottom Navigation View](https://material.io/guidelines/components/bottom-navigation.html)
+-----------------
+- This library is significantly different from what Google has provided for Android Developers. The official Bottom Navigation View from Google doesn't show text when it has 4 tabs.
+
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/official_bottom_nav_bar.gif)
+
+- this library helps you add icons and texts with four bottom bars very easily and efficiently, where all stays visisble all the time, just like this one here:
+
+![](https://github.com/adib2149/BottomNavBar/blob/master/screenshot/quora.jpg)
 
 Features
 -----------------
@@ -31,8 +39,8 @@ How to use
 ``` 'java'
 public class SampleFragment extends Fragment{
 
-    public static SampleFragment newInstance() {
-        return new SampleFragment();
+    public static FourthFragment newInstance() {
+        return new FourthFragment();
     }
 
     @Override
@@ -55,7 +63,7 @@ public class MainActivity extends BottomBarHolderActivity
 
         // four navigation pages that would be displayed as four tabs
         // contains title, icon and fragment instance
-        NavigationPage page1 = new NavigationPage("Home", ContextCompat.getDrawable(this, R.drawable.ic_home_black_24dp), FirstFragment.newInstance()); // or, SampleFragment.newInstance(), as in this example
+        NavigationPage page1 = new NavigationPage("Home", ContextCompat.getDrawable(this, R.drawable.ic_home_black_24dp), FirstFragment.newInstance());
         NavigationPage page2 = new NavigationPage("Support", ContextCompat.getDrawable(this, R.drawable.ic_mail_black_24dp), SecondFragment.newInstance());
         NavigationPage page3 = new NavigationPage("Billing", ContextCompat.getDrawable(this, R.drawable.ic_assessment_black_24dp), ThirdFragment.newInstance());
         NavigationPage page4 = new NavigationPage("Profile", ContextCompat.getDrawable(this, R.drawable.ic_person_black_24dp), FourthFragment.newInstance());
@@ -82,10 +90,6 @@ If you want to change the colors, just override the colors in your **colors.xml*
 <color name="colorNavAccentUnselected">#727272</color>
 ```
 
-
-Contributing
------------------
-Send Pull Requests and you're in!! Alternatively, you can start adding issues here in this repo!
 
 License
 -----------------
